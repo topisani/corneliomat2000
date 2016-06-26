@@ -1,0 +1,4 @@
+build
+.gradle
+.ensime
+.atom-build.yml
