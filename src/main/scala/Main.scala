@@ -3,9 +3,22 @@ object Main extends App {
   John.svar("bi")
   John.svar("gud")
   John.svar("hugo")
+  John.flyv("lavt")
+  Bias.flyv("højt")
+  Bias.slå(John)
+}
+class Person(val navn: String) {
+  def flyv(højde: String): Unit = {
+    println(navn + " flyver " + højde)
+  }
+  def slå(person: Person) = {
+    println(this.navn + " slog " + person.navn)
+  }
+}
+object Bias extends Person("Bias") {
 }
 
-object John {
+object John extends Person ("John") {
 
   val ynglingsord = "fisk"
 
