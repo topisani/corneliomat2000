@@ -1,11 +1,12 @@
 object Main extends App {
-  John.svar("fisk")
-  John.svar("bi")
-  John.svar("gud")
-  John.svar("hugo")
-  John.flyv("lavt")
-  Bias.flyv("højt")
-  Bias.slå(John)
+  //John.svar("fisk")
+  //John.svar("bi")
+  //John.svar("gud")
+  //John.svar("hugo")
+  //John.flyv("lavt")
+  //Bias.flyv("højt")
+  //Bias.slå(John)
+  fister.løb("hurtigt")
 }
 class Person(val navn: String) {
   def flyv(højde: String): Unit = {
@@ -15,9 +16,14 @@ class Person(val navn: String) {
     println(this.navn + " slog " + person.navn)
   }
 }
+def løb(længde: person9) = {
+  println(navn.person + " løb " længde)
+}
 object Bias extends Person("Bias") {
 }
+object fister extends Person("fister") {
 
+}
 object John extends Person ("John") {
 
   val ynglingsord = "fisk"
